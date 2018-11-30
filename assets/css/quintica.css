@@ -1,0 +1,536 @@
+/*To change this license header, choose License Headers in Project Properties.To change this template file, choose Tools | Templatesand open the template in the editor.*/
+/*Created on : Jun 19, 2018, 3:28:23 PMAuthor : Vishval*/
+
+
+.mgbtm20 {
+    margin-bottom: 20px;
+}
+
+.mgtp5 {
+    margin-top:5px;
+}
+
+/*Add task view.php page css*/
+
+.customLegend {
+	border: 1px solid #e5e5e5;
+	padding: 1.5em 0 1em;
+	margin-top: 0.5em;
+	position: relative;
+	margin-bottom: 1.5em;
+}
+.customLegend legend {
+	border: 0;
+	background: #fff;
+	width: auto;
+	transform: translateY(-50%);
+	position: absolute;
+	top: 0;
+	left: 1em;
+	color: #828282;
+	padding: 0 .5em;
+	font-size: 15px;
+	font-weight: 500;
+}
+.customLegend .checkbox-inline {
+    margin-left: 0px;
+    padding-left: 15px;
+   
+}
+
+
+
+.tab-content .customLegend {
+    border: 1px solid #b1b1b1;
+    padding: 1em 1em 1em 2.2em;
+}
+
+.tab-content .customLegend .checkbox-inline {
+    
+    vertical-align: middle;
+        color: #222;
+    
+}
+
+.tab-content .customLegend legend {
+    border: 0;
+    background: #e2e2e2;
+}
+
+.tab-content .sndtsk {
+        margin-top: 15px;
+        width: 92%;
+}
+
+
+.maintabhold {
+    background: #eaeaea;
+    padding-top: 10px;
+    margin-top: -6px;
+    width: 170vh;
+}
+
+.sndtsk hr {
+    border-top: 1px solid #cacaca;
+}
+/* end */
+
+
+/* AssetRoutingView.php page css*/
+.map-frame {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.map-content {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #00000042;
+	color: #222;
+	height: 90px;
+	padding: 5px;
+}
+.hgt100vh {
+	height:100vh;
+}
+/* End asset routing*/
+
+
+/* CompanyAddView.php page css */
+#Add_Entity label.error {
+	color: #FB3A3A;
+	display: inline-block;
+	padding: 0;
+	text-align: left;
+	width: 220px;
+}
+.hidefieldhold .brd1 {
+	border: 1px solid #ddd;
+	margin-top: 12px;
+	margin-bottom: 18px;
+	padding: 8px;
+}
+.hidefieldhold .form-control {
+	border: none;
+	margin-bottom: 0px;
+	clear: both;
+}
+.advancedbtn {
+	font-size: 15px;
+	border-bottom: 1px solid #337ab7;
+	padding-bottom: 2px;
+}
+.hidefieldhold .form-check label{
+	position: relative;
+	cursor: pointer;
+	color: #666;
+	font-size: 22px;
+}
+/* end */
+
+
+/* CompanyEditView.php page css*/
+.hidefieldhold .brd1 {
+	border: 1px solid #ddd;
+	margin-top: 12px;
+	margin-bottom: 18px;
+	padding: 8px;
+}
+.hidefieldhold .form-control {
+	border: none;
+	margin-bottom: 0px;
+	clear: both;
+}
+.advancedbtn {
+	/* color: #337ab7;
+	*/
+	font-size: 15px;
+	border-bottom: 1px solid #337ab7;
+	padding-bottom: 2px;
+}
+/* end */
+
+
+/* TaskListView.php page css*/
+#rowtabs .tab-content, #rowtabs .table, #rowtabs .nav-tabs>li.active>a {
+	background: #e2e2e2;
+}
+#rowtabs .table>tbody>tr>td {
+	border-top:1px solid #d6d6d6;
+	color:#051a2f;
+}
+#rowtabs .nav-tabs>li.active>a {
+	font-weight: bold;
+	color: #2a3f54;
+}
+
+#tasklist tr {
+    cursor: pointer;
+}
+/* end */
+
+
+
+/* TaskReportTemplateView.php */
+.wrapper h3 {
+    color: #d61f27;
+    font-size: 20px;
+}
+
+.wrapper h4 {
+    color: #000000;
+}
+
+.x_panelhold {
+        position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 17px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    opacity: 1;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#tasklist_wrapper .dt-buttons {
+    float:left;
+}
+
+#tasklist_wrapper .dt-button, #datatable_wrapper .dt-buttons a,
+#filtertasklist_wrapper .dt-button, #filtertasklist_wrapper .dt-buttons button{
+    background: #d61f27;
+    border: none;
+    padding: 5px 14px;
+    color: #fff;
+    margin-right: 2px;
+}
+
+ #datatable-buttons_wrapper .dt-button, 
+#datatable-buttons_wrapper .btn-default {
+    background: #d61f27;
+    border: none;
+    padding: 5px 12px;
+    color: #fff;
+    margin-right: 6px;
+}
+
+#datatable_wrapper .dt-buttons a, #filtertasklist_wrapper .dt-buttons a  {
+    margin-right: 8px;
+}
+
+#tasklist_wrapper .dt-button span, #datatable_wrapper .dt-buttons a span,
+#filtertasklist_wrapper .dt-buttons span {
+    color:#fff;
+}
+
+#rowtabs .tab-content {
+   
+        position: relative;
+}
+
+#rowtabs .tab-content .alert-q {
+    top: 2%;
+}
+
+.ntfnd {
+    margin-top: -572px;
+    font-size: 16px;
+    padding: 15px 21px;
+    color: #d61f27;
+    background: #eaeaea;
+}
+
+.alert-q {
+    background: #a0a0a0;
+    color: #fff;
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+}
+
+.errnotification {
+    /* float: left; */
+    margin-top: 12px;
+    font-weight: bold;
+    color: #222;
+}
+
+#rowtabs #style-2::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #a9a9a9;
+}
+/* end */
+
+.hidefieldhold-main {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 14px;
+    /* float: left; */
+    width: 75%;
+    display: block;
+    clear: both;
+    margin: 0 auto 20px auto;
+}
+
+
+.hidefieldhold-main .control-label {
+   text-align: left;
+}
+
+.mgtp25 {
+    margin-top: 5.8%;
+    margin-bottom: 0px
+}
+.mgtp5
+{
+    margin-top: 5px;
+}
+
+
+/*task detail panel php*/
+
+/*multi email input*/
+.multipleInput-container {
+     border:1px #ccc solid;
+     padding:1px;
+     padding-bottom:0;
+     cursor:text;
+     font-size:13px;
+     width:100%;
+     height: 75px;
+     overflow: auto;
+     background-color: white;
+   border-radius:3px;
+}
+ 
+.multipleInput-container input {
+     font-size:13px;
+     /*clear:both;*/
+     width:150px;
+     height:24px;
+     border:0;
+     margin-bottom:1px;
+     outline: none
+}
+ 
+.multipleInput-container ul {
+     list-style-type:none;
+     padding-left: 0px !important;
+}
+ 
+li.multipleInput-email {
+    float: left;
+    margin-right: 2px;
+    margin-bottom: 1px;
+    border: 1px #949494 solid;
+    padding: 2px;
+    background: #949494;
+    color: #fff;
+    border-radius: 4px;
+}
+ 
+.multipleInput-close {
+     width:16px;
+     height:16px;
+     background:url(close.png);
+     display:block;
+     float:right;
+     margin:0 3px;
+}
+.email_search{
+  width: 100% !important;
+}
+
+
+.btn-success[disabled]:hover {
+    background-color: #848484;
+    border-color: #797979;
+}
+
+.pagination>li>a, .pagination>li>span {
+  color: #ff0000;  
+}
+
+.multipleInput-email span, .multipleInput-email a {
+    color: #fff;
+    margin-top: 6px;
+    margin-right: 0;
+}
+
+
+#errormsg {
+   
+    color:#222;
+    padding:0px;
+    width:auto;
+}
+
+.sndtsk .alert-success {
+    background: #72c796;
+    padding: 0;
+    border: none;
+    width: auto;
+    /* float: left; */
+    padding: 5px 14px;
+    clear: both;
+}
+
+
+.popup .close:hover {
+    color: #d61f27 !important;
+}
+
+
+.mapcenter .ui-autocomplete .ui-menu-item a {
+
+    cursor:pointer;
+    
+}
+
+
+.ui-corner-all {
+    cursor:pointer;
+    
+}
+
+.mapcenter .ui-autocomplete .ui-menu-item a:hover {
+    background:#ccc;
+    width:100%;
+    float:left;
+    display: block;
+    text-decoration: none !important;
+}
+
+.x_panelhold .x_title span {
+    color: #ffffff;
+}
+
+.tag-ctn {
+        width:100% !important;
+    }
+    
+    .pagination {
+        margin-top: 8% !important;
+    }
+
+    
+  .img-object       {
+    /* max-height: 140px; */
+    /* overflow: hidden; */
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 767px) {
+    
+
+
+#rowtabs .tab-content .alert-q {
+    top: 2%;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .mobilewidth-50 {
+    width:30%;
+}
+
+      .placehold {
+    width: 20%;
+     }
+    
+  .mapcenter .form-row .form-group {
+        width: 50%;
+        margin: 1px 0px;
+        min-height: 57px;
+    }
+    .mapcenter .form-row .filter_btn{
+        float: right;
+        text-align: right;
+        background: transparent;
+        padding: 0px;
+    }
+    .mapcenter .form-row .form-group #autocomplete-container ul {
+        background: #fff;
+    }
+    .mapcenter .form-row {
+        width: 99%;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    .map-content{
+        height: auto !important;
+    }
+    
+    .hgt100vh {
+        height: 150vh !important;
+    }
+}
+
+@media (min-width: 544px) and (max-width: 1024px) {
+    .rgt_col {
+      top: 17.5% !important;
+  }
+  
+
+  
+  .form-row .form-group button {
+      margin-top:0px !important;
+  }
+    
+    
+}
+
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait){
+    
+    
+  
+    .map-content {
+        width: 100% !important;
+    }
+    .form-row .form-group {
+    padding: 4px 5px 0px 10px !important;
+    }
+    .rgt_col {
+    position: absolute;
+    top: 8.8%;
+        width: 260px;
+    }
+    
+    .tag-ctn {
+        width:100% !important;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape){
+    .map-content {
+        width: 100% !important;
+    }
+    .rgt_col {
+    position: absolute;
+    top: 11.5%;
+        width: 260px;
+    }
+}
+
