@@ -864,7 +864,7 @@ class TaskController extends MY_Controller {
             $taskid = $this->input->post('tid');
         else
             $taskid = $this->input->get('tid');
-        $taskid = '137588';
+//        $taskid = '137588';
         //$taskid='137656'; 
         $data['taskdetail'] = $taskdata = $this->TaskModel->updateTask($taskid);
         $tasktype = $data['tasktype'] = $this->TaskModel->taskType_update($taskdata[0]['task_type_id']);
