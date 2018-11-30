@@ -150,9 +150,16 @@
                <!--  <span style="float:left; display:inline; margin-right:20px;"><b> Repair Time:</b> <?php echo $inter->format('%h:%i:%s'); ?></span> -->
                     <span style="float:left; display:inline; margin-right:20px;"><b> Repair Time:</b> <?php echo (isset($taskdetail[0]['total_worked_time'])) ? $taskdetail[0]['total_worked_time'] : ''; ?></span>
                 </div>
-            <?php }  ?> 
-            <?php if (isset($task_location) && $task_location == 1) { ?>
+            <?php }            
+
+
+    ?>
+        
+            
+            <?php if (isset($taskdetail[0]['task_address']) && !empty($taskdetail[0]['task_address'])) { ?>
                 <div class = "row text-left" style = "background-color:#ccc; padding:15px;">
+                    
+                    
                     <?php
                     if ($taskdetail[0]['task_address']) {
                         ?> 
@@ -163,12 +170,28 @@
 
                         <div style="float:left; width:70%">
                             <?php
-                            $address = $taskdetail[0]['task_address']; /* Insert address Here */
-                            $ReplaceUnwantedSymbolsFromAddress1 = preg_replace("/[^a-zA-Z0-9],/", "+", $address);
-                            $ReplaceUnwantedSymbolsFromAddress = str_replace(" ", "+", $ReplaceUnwantedSymbolsFromAddress1);
-                            ?> 
-                            <img width="500" src="https://maps.googleapis.com/maps/api/staticmap?center=&zoom=16&scale=1&size=500x250&maptype=roadmap&format=jpg&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:A%7C<?php echo $ReplaceUnwantedSymbolsFromAddress; ?>" height="240" alt="Google Map of ">
+                          $address1 = $taskdetail[0]['task_address']; /* Insert address Here */ 
 
+                            
+                     //   $address='Palky Rd, Pune, Maharashtra 412308, India';
+            
+ 
+//           
+           $ReplaceUnwantedSymbolsFromAddress=preg_replace("/[^a-zA-Z0-9]/","_",$address1);           
+           $skipUnwatedCharacterFromAddress=str_replace(',', '', str_replace(' ', '_', $ReplaceUnwantedSymbolsFromAddress));
+           
+        //$Create_map_image_url="http://maps.googleapis.com/maps/api/staticmap?center=".$ReplaceUnwantedSymbolsFromAddress . "&zoom=14&size=900x200&markers=color%3ablue%7Clabel%3aS%7C11211&sensor=false"; 
+        $Create_map_image_url="https://maps.googleapis.com/maps/api/staticmap?center=".$ReplaceUnwantedSymbolsFromAddress.   "&zoom=14&size=900x200&size=900x200&markers=color%3ablue%7Clabel%3aS%7C11211&sensor=false&key=AIzaSyA5a1O0rEsC2x-UQAQ_0gj94u1RveFIOs4&sensor=false";
+        $path=  DOCUMENT_STORE_PATH;
+                //DOCUMENT_STORE_PATH;
+        $Created_imgPush_inDirectory=file_put_contents($path.'/'.$ReplaceUnwantedSymbolsFromAddress.'.jpg', file_get_contents($Create_map_image_url));
+        $imagename = $path."".$skipUnwatedCharacterFromAddress.".jpg";
+        // echo "<img style=\"width:auto; height:auto;\" src=".$imagename.">";
+
+    ?>
+        <img width="500" src="<?php echo $imagename; ?>" height="240" alt="Google Map of ">
+        <!--<img width="500" src="https://maps.googleapis.com/maps/api/staticmap?center=<?php echo $ReplaceUnwantedSymbolsFromAddress; ?>&maptype=roadmap&format=jpg&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:A%7C&zoom=12&scale=1&size=500x250&key=AIzaSyA5a1O0rEsC2x-UQAQ_0gj94u1RveFIOs4" height="240" alt="Google Map of ">-->
+         
                         </div>
                     <?php } else {
                         ?>
@@ -388,6 +411,12 @@
             <?php } ?>
             <div style = "text-align:center;  padding:0 15px; border-top:1px solid #ddd;"><img src = "http://qwork-demo.quintica.com/assets/images/WorkWide.png" style = "width: 160px; margin-top: 10px;"></div>
         </div>
+          <?php 
+   
+
+    ?>
+      
+    
     </body>
 
 </html>                                        

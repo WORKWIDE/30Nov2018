@@ -175,7 +175,7 @@ define('DOC_SERVICE_NOW_PASSWORD', 'ASDH!@#$N!%!@#$NF');
 // ------   qwork-demo system attachemnt path 
 //define('DOCUMENT_STORE_PATH', '/home/admin/web/qwork-dev2.quintica.com/public_html/qwork-dev.com/customerdocument/');
 //define('DOCUMENT_STORE_PATH', '/home/admin/web/qwork-demo.quintica.com/public_html/qwork-demo.com/customerdocument/');
-define('DOCUMENT_STORE_PATH', APPPATH.'/tememail/');
+define('DOCUMENT_STORE_PATH', APPPATH.'tememail/');
 //""
 //-------***************--------------
 
