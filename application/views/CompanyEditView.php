@@ -201,7 +201,7 @@
         <h2>Edit Entity<small></small></h2>
         <div class="clearfix"></div>
     </div>
-    <?php echo ios_notification_server; //echo "<pre>";print_r($result); ?>
+  
     <div class="x_content">     
         <form id="Edit_Entity" name="Edit_Entity" data-parsley-validate class="form-horizontal form-label-left"  method="POST" enctype="multipart/form-data">
             <input type="hidden" name="ent_id" value="<?php echo $result[0]['id']; ?>">
